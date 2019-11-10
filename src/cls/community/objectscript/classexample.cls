@@ -1,5 +1,6 @@
-Class PackageSample.ObjectScript
+Class ObjectScript.ClassExample
 {
+
 ClassMethod Test() As %Status
 {
     set a=42

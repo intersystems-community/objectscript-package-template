@@ -1,4 +1,4 @@
-Class PackageSample.PersistentClass Extends %Persistent
+Class ObjectScript.PersistentClass Extends %Persistent
 {
 
 Property Test As %VarString;
@@ -20,11 +20,11 @@ Storage Default
 <Value>Test</Value>
 </Value>
 </Data>
-<DataLocation>^PackageSample.PersistentClassD</DataLocation>
+<DataLocation>^ObjectScript.PersistentClassD</DataLocation>
 <DefaultData>PersistentClassDefaultData</DefaultData>
-<IdLocation>^PackageSample.PersistentClassD</IdLocation>
-<IndexLocation>^PackageSample.PersistentClassI</IndexLocation>
-<StreamLocation>^PackageSample.PersistentClassS</StreamLocation>
+<IdLocation>^ObjectScript.PersistentClassD</IdLocation>
+<IndexLocation>^ObjectScript.PersistentClassI</IndexLocation>
+<StreamLocation>^ObjectScript.PersistentClassS</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 
