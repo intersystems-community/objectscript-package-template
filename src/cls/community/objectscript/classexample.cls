@@ -1,4 +1,4 @@
-Class ObjectScript.ClassExample
+Class community.objectscript.ClassExample
 {
 
 ClassMethod Test() As %Status

@@ -1,4 +1,4 @@
-Class ObjectScript.PersistentClass Extends %Persistent
+Class community.objectscript.PersistentClass Extends %Persistent
 {
 
 Property Test As %VarString;
@@ -20,11 +20,11 @@ Storage Default
 <Value>Test</Value>
 </Value>
 </Data>
-<DataLocation>^ObjectScript.PersistentClassD</DataLocation>
+<DataLocation>^community45DC.PersistentC1A93D</DataLocation>
 <DefaultData>PersistentClassDefaultData</DefaultData>
-<IdLocation>^ObjectScript.PersistentClassD</IdLocation>
-<IndexLocation>^ObjectScript.PersistentClassI</IndexLocation>
-<StreamLocation>^ObjectScript.PersistentClassS</StreamLocation>
+<IdLocation>^community45DC.PersistentC1A93D</IdLocation>
+<IndexLocation>^community45DC.PersistentC1A93I</IndexLocation>
+<StreamLocation>^community45DC.PersistentC1A93S</StreamLocation>
 <Type>%Storage.Persistent</Type>
 }
 

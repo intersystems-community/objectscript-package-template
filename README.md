@@ -1,9 +1,26 @@
-## intersystems-objectscript-template
-This is a template for InterSystems ObjectScript Github repository.
-The template goes also with a few files which let you immedietly compile your ObjecScript files in InterSystems IRIS Community Edition in a docker container
+## objectscript-package-template
+This is a template for InterSystems ObjectScript class package which is planned to be published into [ZPM registry](https://pm.community.intersystems.com/packages/-/all).
+[Learn more on Community Package Manager (ZPM)](https://community.intersystems.com/post/introducing-intersystems-objectscript-package-manager)
 
-## Prerequisites
-This needs to have git and docker installed.
+## repo structure
+1. put ObjectScript classes under /src folder in form
+/cls - classes
+/inc - includes
+/mac - mac routines
+/int - int routines
+/gbl - globals
+
+2. Place module.xml file in the root of the repo. Learn more about [module.xml format](https://community.intersystems.com/post/anatomy-zpm-module-packaging-your-intersystems-solution)
+
+
+## Naming convention
+Each folder under /cls corresponds to Class package.
+first folder/package is the organisatoin or developer name.
+second level is the project name
+third is class or sub-package
+E.g. this repo contains a simple example of ObjectScript class for the repository published in [Developers Community github](https://github.com/intersystems-community/objectscript-package-template)
+The organisation is intersystems-community, and the corresponding package name is 'community'.
+The repo is objectscript-package-template and the subpackage name for this repo is 'objectscript'
 
 ## Installation 
 
@@ -15,11 +32,6 @@ $ git clone https://github.com/your-repository.git
 
 Open the terminal in this directory and run:
 
-```
-$ docker-compose build
-```
-
-3. Run the IRIS container with your project:
 
 ```
 $ docker-compose up -d
