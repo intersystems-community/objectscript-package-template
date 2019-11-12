@@ -7,6 +7,7 @@
       <Packaging>module</Packaging>
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="community.objectscript.PKG"/>
+      <Resource Name="community.objectscript.macroexample.INC"/>
     </Module>
   </Document>
 </Export>

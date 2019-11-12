@@ -44,7 +44,7 @@ Open IRIS terminal:
 ```
 $ docker-compose exec iris iris session iris
 USER>zn "IRISAPP"
-IRISAPP>write ##class(PackageSample.ObjectScript).Test()
+IRISAPP>write ##class(community.objectscript.ClassExample).Test()
 ```
 ## How to start coding
 This repository is ready to code in VSCode with ObjectScript plugin.
@@ -63,16 +63,15 @@ The script in Installer.cls will import everything you place under /src/cls into
 The simplest dockerfile which starts IRIS and imports Installer.cls and then runs the Installer.setup method, which creates IRISAPP Namespace and imports ObjectScript code from /src folder into it.
 Use the related docker-compose.yml to easily setup additional parametes like port number and where you map keys and host folders.
 Use .env/ file to adjust the dockerfile being used in docker-compose.
+It also installs ZPM - ObjectScript Package Manager client
 
-# Dockerfile-zpm
+# module.xml
 
-Dockerfile-zpm builds for you a container which contains ZPM package manager client so you are able to install packages from ZPM in this container.
-As an example of usage in installs webterminal
-
-# Dockerfile-web
-
-Dockerfile-web starts IRIS does the same what Dockerfile does and also sets up the web app programmatically
-
+This file describes project to be installed as package in ObjectScript Package Manager. You can test your module.xml with following commands:
+// load the source code of the package as it is described in module.xml
+IRISAPP:zpm>load /irisdev/app
+// run the package installer test
+IRISAPP:zpm>objectscript-package-template package -v
 
 # .vscode/settings.json
 
