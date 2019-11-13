@@ -8,6 +8,7 @@
       <SourcesRoot>src</SourcesRoot>
       <Resource Name="community.objectscript.PKG"/>
       <Resource Name="community.objectscript.macroexample.INC"/>
+      <Resource Name="community.objectscript.MacExample.MAC"/>
     </Module>
   </Document>
 </Export>

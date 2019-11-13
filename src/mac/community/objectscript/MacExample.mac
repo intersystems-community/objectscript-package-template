@@ -1,6 +1,6 @@
 ROUTINE community.objectscript.MacExample
 
-GetCurrentNamespace() {
+GetCurrentNamespace() public {
 	
 	return $Namespace
 }
