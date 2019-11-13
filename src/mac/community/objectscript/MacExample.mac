@@ -1,0 +1,6 @@
+ROUTINE community.objectscript.MacExample
+
+GetCurrentNamespace() {
+	
+	return $Namespace
+}

@@ -9,9 +9,14 @@ ClassMethod Test() As %Status
     return "It works!"
 }
 
-ClassMethod Version() As %Status
+ClassMethod Version() As %String
 {
     return $$$IRISVersion
+}
+
+ClassMethod Namespace() As %String
+{
+    return $$GetCurrentNamespace^community.objectscript.MacExample()
 }
 
 }
