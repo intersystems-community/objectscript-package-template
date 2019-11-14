@@ -9,6 +9,7 @@
       <Resource Name="community.objectscript.PKG"/>
       <Resource Name="community.objectscript.macroexample.INC"/>
       <Resource Name="community.objectscript.MacExample.MAC"/>
+      <Resource Name="settings.GBL"/>
     </Module>
   </Document>
 </Export>
