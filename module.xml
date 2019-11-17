@@ -10,6 +10,19 @@
       <Resource Name="community.objectscript.macroexample.INC"/>
       <Resource Name="community.objectscript.MacExample.MAC"/>
       <Resource Name="settings.GBL"/>
+      <SystemSetting Name="CSP.DefaultFileCharset" Value="UTF-8"/>
+      <CSPApplication
+        Url="/hello"
+        Path="/src/csp"
+        Directory="{$cspdir}/hello"
+        ServeFiles="1"
+        Recurse="1"
+        CookiePath="/"
+        MatchRoles=":{$dbrole}"
+        PasswordAuthEnabled="1"
+        UnauthenticatedEnabled="0"
+       />
     </Module>
+    
   </Document>
 </Export>
