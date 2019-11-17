@@ -9,7 +9,7 @@
       <Resource Name="community.objectscript.PKG"/>
       <Resource Name="community.objectscript.macroexample.INC"/>
       <Resource Name="community.objectscript.MacExample.MAC"/>
-      <Resource Name="settings.GBL"/>
+      <Resource Name="community.objectscript.settings.GBL"/>
       <SystemSetting Name="CSP.DefaultFileCharset" Value="UTF-8"/>
       <CSPApplication
         Url="/hello"
