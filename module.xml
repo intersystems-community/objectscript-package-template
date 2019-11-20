@@ -17,10 +17,25 @@
         Directory="{$cspdir}/hello"
         ServeFiles="1"
         Recurse="1"
-        CookiePath="/"
+        CookiePath="/hello"
+        UseCookies="2"
         MatchRoles=":{$dbrole}"
         PasswordAuthEnabled="1"
         UnauthenticatedEnabled="0"
+       />
+
+       <CSPApplication 
+        Url="/rest-test"
+        Path="/src/csp"
+        Recurse="1"
+        Directory="{$cspdir}/rest-test" 
+        MatchRoles=":{$dbrole}"
+        PasswordAuthEnabled="1"
+        UnauthenticatedEnabled="0"
+        DispatchClass="community.objectscript.RESTExample"
+        ServeFiles="1"
+        CookiePath="/rest-test"
+        UseCookies="2"
        />
     </Module>
     
