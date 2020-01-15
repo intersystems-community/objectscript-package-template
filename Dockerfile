@@ -25,12 +25,13 @@ COPY irissession.sh /
 SHELL ["/irissession.sh"]
 # below is objectscript executed in terminal
 # each row is what you type in terminal and Enter
+# zpm "install webterminal" 
 RUN \
   do $SYSTEM.OBJ.Load("Installer.cls", "ck") \
   set sc = ##class(App.Installer).setup() \
   Do $system.OBJ.Load("/tmp/deps/zpm.xml", "ck") \
-  zn "IRISAPP" \
-  zpm "install webterminal" 
+  zn "IRISAPP" 
+  
 
 # bringing the standard shell back
 SHELL ["/bin/bash", "-c"]

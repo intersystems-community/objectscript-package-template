@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Export generator="Cache" version="25">
-  <Document name="objectscript-package-template.MODULE">
+  <Document name="objectscript-package-template.ZPM">
     <Module>
       <Name>objectscript-package-template</Name>
       <Version>1.0.0</Version>
@@ -11,6 +11,13 @@
       <Resource Name="community.objectscript.MacExample.MAC"/>
       <Resource Name="community.objectscript.settings.GBL"/>
       <SystemSetting Name="CSP.DefaultFileCharset" Value="UTF-8"/>
+      <Invokes>
+        <Invoke Class="community.objectscript.PersistentClass" Method="CreateRecord"></Invoke>
+        <Invoke Class="community.objectscript.ClassExample" Method="SetToTheGlobal">
+          <Arg>42</Arg>
+          <Arg>Text Data</Arg>
+        </Invoke>
+      </Invokes>
       <CSPApplication
         Url="/hello"
         Path="/src/csp"
