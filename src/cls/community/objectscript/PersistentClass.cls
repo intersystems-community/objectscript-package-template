@@ -11,6 +11,22 @@ ClassMethod CreateRecord() As %Status
     return objPC.%Save()
 }
 
+ClassMethod WriteAllRecords() As %Status
+{
+
+    #dim tSC As %Status = $$$OK
+
+    Set rset = ..ExtentFunc()
+
+    While rset.%Next() {   
+        Set record =..%OpenId(rset.ID)    
+        Write "ID=",record.%Id()," Test=",record.Test
+        Write !
+
+    }
+    Quit tSC
+}
+
 Storage Default
 {
 <Data name="PersistentClassDefaultData">
