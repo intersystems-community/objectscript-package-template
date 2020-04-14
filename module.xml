@@ -20,8 +20,8 @@
       </Invokes>
       <CSPApplication
         Url="/hello"
-        Path="/src/csp"
-        Directory="{$cspdir}/hello"
+        SourcePath="/src/csp"
+        DeployPath="{$cspdir}/hello"
         ServeFiles="1"
         Recurse="1"
         CookiePath="/hello"
@@ -33,9 +33,9 @@
 
        <CSPApplication 
         Url="/rest-test"
-        Path="/src/csp"
+        SourcePath="/src/csp"
         Recurse="1"
-        Directory="{$cspdir}/rest-test" 
+        DeployPath="{$cspdir}/rest-test" 
         MatchRoles=":{$dbrole}"
         PasswordAuthEnabled="1"
         UnauthenticatedEnabled="0"
