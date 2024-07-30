@@ -24,6 +24,8 @@ ClassMethod Namespace() As %String
 ClassMethod OutputGlobal() As %Status
 {
     zw @(..#Global)
+
+    quit $$$OK
 }
 
 ClassMethod SetToTheGlobal(int As %Integer, str As %String) As %Status
@@ -34,6 +36,8 @@ ClassMethod SetToTheGlobal(int As %Integer, str As %String) As %Status
     set @(..#Global)@("string")=$g(str)
     set @(..#Global)@("today")=$zdate($H,2)
     set @(..#Global)@("IRIS Version")=$ZVersion
+
+    quit $$$OK
 }
 
 }
