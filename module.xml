@@ -18,7 +18,7 @@
           <Arg>Text Data</Arg>
         </Invoke>
       </Invokes>
-      <CSPApplication
+      <WebApplication
         Url="/hello"
         SourcePath="/src/csp"
         DeployPath="{$cspdir}/hello"
@@ -26,17 +26,17 @@
         Recurse="1"
         CookiePath="/hello"
         UseCookies="2"
-        MatchRoles=":{$dbrole}"
+        MatchRoles=":{$globalsDbRole}"
         PasswordAuthEnabled="1"
         UnauthenticatedEnabled="0"
        />
 
-       <CSPApplication 
+       <WebApplication 
         Url="/rest-test"
         SourcePath="/src/csp"
         Recurse="1"
         DeployPath="{$cspdir}/rest-test" 
-        MatchRoles=":{$dbrole}"
+        MatchRoles=":{$globalsDbRole}"
         PasswordAuthEnabled="1"
         UnauthenticatedEnabled="0"
         DispatchClass="community.objectscript.RESTExample"
